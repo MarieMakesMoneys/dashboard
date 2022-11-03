@@ -9,6 +9,10 @@
     background-color:rgb(234, 253, 209);
 }
 
+* {
+    margin: 0px;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -17,5 +21,37 @@ body {
 
 .sidebar {
     grid-row: span 2;
+    background-color: rgb(230, 229, 236);
+    display: grid;
+    grid-template-rows: 7rem 1fr;
 }
 
+.logo {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-self: center;
+}
+
+img.logo {
+    height: 80px;
+    padding: 1rem;
+}
+
+.dashboard {
+    font-size: 2rem;
+    padding: .5rem;
+    display: grid;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+img.pp {
+    height: 60px;
+}
