@@ -1,1 +1,21 @@
+@font-face {
+    font-family: logo-font;
+    src: url(./assets/Quicksand-VariableFont_wght.ttf);
+}
+
+:root {
+    font-family: logo-font, sans-serif;
+    font-size: 18px;
+    background-color:rgb(234, 253, 209);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    grid-row: span 2;
+}
 
