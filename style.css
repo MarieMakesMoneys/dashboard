@@ -40,7 +40,8 @@ body {
     color:rgb(223, 222, 216);
     background-color: rgb(141, 104, 107);
     display: grid;
-    grid-template-rows: 7rem 1fr;
+    grid-template-rows: 7rem max-content 1fr;
+    gap: 2rem;
 }
 
 .logo {
@@ -67,6 +68,13 @@ img.logo {
     line-height: 2.5rem;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.menu .icon {
+    width: 1.5rem;
+    padding-right: 1rem;
+    align-self: center;
+    justify-self: center;
 }
 
 .header {
