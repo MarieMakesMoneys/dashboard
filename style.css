@@ -31,10 +31,11 @@ palette {
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 10rem 1fr;
+    grid-template-rows: 8.5rem 1fr;
 }
 
 .sidebar {
+    padding-right: 1rem;
     grid-row: span 2;
     color:rgb(223, 222, 216);
     background-color: rgb(141, 104, 107);
@@ -70,57 +71,79 @@ img.logo {
 
 .header {
     color:rgb(223, 222, 216);
+    font-size: 1.2rem;
     background-color:rgb(58, 97, 88);
     display: grid;
-    grid-template-rows: 4rem 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.fullname {
+    font-weight: 600;
 }
 
 .top {
     display: grid;
     grid-template-columns: 2fr 1fr;
+
 }
 
 input[type="search"] {
     border-radius: 1rem;
     height: 2rem;
-    margin: 1rem;
+    margin: 1rem 2rem;
 }
 
 .userinfo {
     display: grid;
-    grid-template-columns: 3.5rem 1fr;
-    padding: 1rem;
+    grid-template-columns: 2.2fr 1fr;
+    gap: 1rem;
+    padding: .6rem;
+    padding-right: 2rem;
     align-items: center;
+    justify-items: right;
 }
 
-img.pp {
+.top .pp {
     width: 3rem;
 }
 
 .bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 7fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0px 1rem;
 }
 
-.bottom-left {
+.welcome-msg {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 1rem;
+    align-content: center;
 }
 
-.bottom-left img {
-    grid-row: span 3;
+.bottom .greetings {
+    font-size: .8rem;
 }
 
-.buttons {
-    grid-column: 3 / 4;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    justify-items: center;
+.bottom .fullname {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 
-button {
+.bottom .username {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.bottom .pp {
+    width: 4rem;
+    place-self: center right;
+}
+
+.bottom button {
+    font-size: .8rem;
+    height: fit-content;
     border-radius: 1.5rem;
     background-color: rgb(141, 104, 107) ;
     color:rgb(253, 245, 237);
@@ -135,8 +158,6 @@ button:hover {
     color: rgb(47, 34, 44);
     box-shadow: 1px 1px rgb(141, 104, 107);
 }
-
-/*main styling start*/
 
 .main {
     padding: 16px;
@@ -170,7 +191,7 @@ button:hover {
     box-shadow: 2px 2px rgb(141, 104, 107);
     border-left: solid 8px rgb(58, 97, 88);
     background-color: rgb(253, 245, 237);
-    height: 350px;
+    height: max(250px, 80%);
     display: grid;
     grid-template-rows: 2rem 2fr 1fr;
 }
@@ -202,7 +223,7 @@ h6 {
     border-radius: .5rem;
     border-left: solid 4px rgb(58, 97, 88);
     border-bottom: solid 4px rgb(58, 97, 88);
-    padding: 2rem;
+    padding: 1.5rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
@@ -224,10 +245,10 @@ h6 {
     border-radius: .5rem;
     border-left: solid 4px rgb(58, 97, 88);
     border-bottom: solid 4px rgb(58, 97, 88);
-    padding: 2rem;
+    padding: 1.5rem;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .profile {
