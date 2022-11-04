@@ -20,9 +20,9 @@ ul li {
 
 /*
 palette {
-    beige pale rgb(223, 222, 216)
+    beige pale rgb(223, 222, 216) #DFDED8
     light brown rgb(141, 104, 107)
-    dark brown rgb(47, 34, 44)
+    dark brown rgb(47, 34, 44) #2F222C
     light cream rgb(253, 245, 237)
     medium green rgb(58, 97, 88)
 }
@@ -266,4 +266,15 @@ h6 {
 .profile .name {
     align-self: center;
     justify-self: center;
+}
+
+.footer {
+    background-color: rgb(58, 97, 88);
+    color: rgb(223, 222, 216);
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.footer :link, .footer :visited {
+    color: rgb(223, 222, 216);
 }
