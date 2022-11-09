@@ -57,6 +57,10 @@ img.logo {
     padding-right: 0;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 .dashboard {
     font-size: 2.3rem;
     letter-spacing: -.1rem;
@@ -181,6 +185,7 @@ button:hover {
     background-color: rgb(253, 245, 237) ;
     color: rgb(47, 34, 44);
     box-shadow: 1px 1px rgb(141, 104, 107);
+    cursor: pointer;
 }
 
 .main {
