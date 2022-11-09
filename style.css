@@ -52,13 +52,14 @@ body {
 }
 
 img.logo {
-    height: 6rem;
+    height: 4rem;
     padding: 1rem;
     padding-right: 0;
 }
 
 .dashboard {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    letter-spacing: -.1rem;
     padding: .5rem;
     display: grid;
     align-items: center;
@@ -214,7 +215,7 @@ button:hover {
     box-shadow: 2px 2px rgb(141, 104, 107);
     border-left: solid 8px rgb(58, 97, 88);
     background-color: rgb(253, 245, 237);
-    height: max(250px, 80%);
+    height: max(180px, 80%);
     display: grid;
     grid-template-rows: 2rem 2fr 1fr;
 }
